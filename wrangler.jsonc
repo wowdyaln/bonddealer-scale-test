@@ -10,7 +10,7 @@
 		{
 			"binding": "DB",
 			"database_name": "bonddealer-scale-test",
-			"database_id": "760d86c2-fa60-4676-92c0-d3be1e76194c",
+			"database_id": "1c55ad29-894d-4050-ab98-a80b1d462e6a",
 			"migrations_dir": "../../migrations",
 		},
 	],
