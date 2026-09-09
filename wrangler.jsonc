@@ -3,23 +3,30 @@
 	"name": "bonddealer-scale-test",
 	"main": "./src/worker.ts",
 	"compatibility_date": "2026-02-24",
-	"compatibility_flags": ["nodejs_compat"],
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
 	"d1_databases": [
 		{
 			"binding": "DB",
-			"database_name": "bonddealer-scale-test","database_id": "760d86c2-fa60-4676-92c0-d3be1e76194c",
+			"database_name": "bonddealer-scale-test",
+			"database_id": "760d86c2-fa60-4676-92c0-d3be1e76194c",
+			"migrations_dir": "../../migrations",
 		},
 	],
 	"r2_buckets": [
 		{
 			"binding": "MEDIA",
-			"bucket_name": "bonddealer-scale-test","preview_bucket_name": "bonddealer-scale-test",
+			"bucket_name": "bonddealer-scale-test",
+			"preview_bucket_name": "bonddealer-scale-test",
 		},
 	],
 	// Worker Loader for plugin sandboxing — 移除以避免要求 Dynamic Workers（僅 Workers Paid 提供）。
 	// 這次規模壓測不需要 sandboxed 外掛（webhook-notifier），見 astro.config.mjs 同步移除。
 	// General maintenance cron trigger
 	"triggers": {
-		"crons": ["* * * * *"],
+		"crons": [
+			"* * * * *"
+		],
 	},
 }
