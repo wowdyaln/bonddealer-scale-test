@@ -16,12 +16,8 @@
 			"bucket_name": "bonddealer-scale-test","preview_bucket_name": "bonddealer-scale-test",
 		},
 	],
-	// Worker Loader for plugin sandboxing
-	"worker_loaders": [
-		{
-			"binding": "LOADER",
-		},
-	],
+	// Worker Loader for plugin sandboxing — 移除以避免要求 Dynamic Workers（僅 Workers Paid 提供）。
+	// 這次規模壓測不需要 sandboxed 外掛（webhook-notifier），見 astro.config.mjs 同步移除。
 	// General maintenance cron trigger
 	"triggers": {
 		"crons": ["* * * * *"],
